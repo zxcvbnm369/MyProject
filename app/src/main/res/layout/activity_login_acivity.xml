@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEDF1"
+    tools:context="edu.feicui.com.myproject.activity.LoginAcivity">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <edu.feicui.com.myproject.view.ClearEditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv_head"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:cursorVisible="false"
+        android:gravity="center"
+        android:hint="QQ账号/手机号/邮箱"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:textSize="16.0sp" />
+
+
+    <edu.feicui.com.myproject.view.ClearEditText
+        android:id="@+id/edit_userpwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_username"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        android:cursorVisible="false"
+        android:gravity="center"
+        android:hint="密码"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:paddingLeft="10.0dip"
+        android:password="true"
+        android:singleLine="true"
+        android:textSize="16.0sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_userpwd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_float_nomal"
+        android:padding="15dp"
+        android:text="登录"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="新用户注册"
+        android:textColor="#01AEEF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_remeber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="无法登录？"
+        android:textColor="#01AEEF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

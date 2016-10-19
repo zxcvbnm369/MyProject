@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyProject</string>
+    <string name="title_activity_two_activitu">TwoActivitu</string>
+    <string name="title_activity_two">TwoActivity</string>
+    <string name="sendRequest">发送请求</string>
+    <string name="btnSend">发送网络请求</string>
+</resources>
